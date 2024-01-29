@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="height: 400px;">
+
+        <h1>Main</h1>
+        <div style="width: 250px; height: 300px;float:left ; background-color: aqua;">
+        </div>
+        <div style="float : left">
+
+            <div style="width: 200px; height: 150px ; float : left; background-color: blue;">bai1
+
+            </div>
+            <div style="width: 200px; height: 150px ; float : left; background-color:green;">bai1
+
+            </div>
+            </br>
+            <div style="width: 150px; height: 150px ; float : left; background-color:green;">bai1
+
+            </div>
+            <div style="width: 150px; height: 150px ; float : left; background-color:pink;">bai1
+
+            </div>
+            <div style="width: 100px; height: 150px ; float : left; background-color:yellow;">bai1
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+    <div style="width: 650px; height: 50px;float:left ; background-color: blueviolet;">bai4
+
+    </div>
+</body>
+
+</html>
