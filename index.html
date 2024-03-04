@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code JAVASCRIPT</title>
+
+ <script lang="JAVASCRIPT" >
+       
+      function HienThi()
+      {
+        var StrName = prompt("Nhap ten Cua ban");
+        alert ("Ten Cua Ban la :" + StrName);
+
+      }
+      function TinhTong()
+      {
+
+        
+
+
+        var giatri1 = parseInt(document.getElementById('txtGT1').value);
+        var giatri2 = parseInt(document.getElementById('txtGT2').value);
+     
+        var Cong = giatri1 + giatri2;
+      
+
+      var kq = document.getElementById('Kq');
+      kq.innerText = Cong.toString();
+      
+
+      }
+    
+
+    </script>
+ 
+    <style>
+      
+
+    </style>
+</head>
+<body>
+     
+ 
+ <input style=" border-radius: 20;
+ border-color: aqua;" type="text" id = "txtGT1">
+ <input  type="text" id = "txtGT2">
+ <button style="border-radius: 20px ; background-color: blueviolet; color:aliceblue" id="btnTinhTong" onclick="TinhTong();">Tinh Tong</button>
+
+<label for="" >Ket qua: </label>
+<label style=" color :red;
+size: 100;" for=""id = "Kq">0</label>
+
+
+</body>
+</html>
