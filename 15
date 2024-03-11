@@ -1,46 +1,35 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Calculator</title>
-  <script type="text/javascript">
-    function TinhTong() {
-      var a = parseInt(document.getElementById('a').value);
-      var b = parseInt(document.getElementById('b').value);
-      var dau = document.getElementById('dau').value;
-      var kq = document.getElementById('ketqua');
+  <title>Set Attributes</title>
+  <script lang="javascript">
+    function set() {
+      var noidung = document.getElementById('strNoidung').value;
+      var chieucao = document.getElementById('strChieuCao').value;
+      var chieurong = document.getElementById('strChieurong').value;
+      var mau = document.getElementById('strMau').value;
+      var divGet = document.getElementById('divGet');
       
-      if (dau === "+") {
-        var tong = a + b;
-        kq.innerText = tong.toString();
-      } else if (dau === "-") {
-        var tong = a - b;
-        kq.innerText = tong.toString();
-      } else if (dau === "*") {
-        var tong = a * b;
-        kq.innerText = tong.toString();
-      } else if (dau === "/") {
-        if (b === 0) {
-          kq.innerText = "Error: Cannot divide by zero";
-        } else {
-          var tong = a / b;
-          kq.innerText = tong.toString();
-        }
-      }
+      divGet.setAttribute("style", "width:"+ chieurong +"px; height:"+ chieucao +"px; background-color:"+ mau +";");
+      divGet.innerHTML = noidung;
     }
   </script>
 </head>
 <body>
-  <label for="a" style="float: left;">a</label>
-  <input type="text" id="a">
+  <label for="strNoidung">Nội Dung:</label>
+  <input type="text" id="strNoidung">
   
-  <label for="dau" style="float: left;">Operator (+, -, *, /)</label>
-  <input type="text" id="dau">
+  <label for="strChieurong">Chiều Rộng:</label>
+  <input type="text" id="strChieurong">
   
-  <label for="b" style="float: left;">b</label>
-  <input type="text" id="b">
+  <label for="strChieuCao">Chiều Cao:</label>
+  <input type="text" id="strChieuCao">
   
-  <button onclick="TinhTong();">Calculate</button>
+  <label for="strMau">Màu:</label>
+  <input type="text" id="strMau">
   
-  <label for="ketqua" id="ketqua">Result</label>
+  <button onclick="set();">Chạy</button>
+  
+  <div id="divGet" style="width: 200px; height: 200px; background-color:;"></div>
 </body>
 </html>
