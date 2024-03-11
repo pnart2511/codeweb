@@ -1,0 +1,46 @@
+DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <script type="text/javascript">
+    function TinhTong() {
+      var a = parseInt(document.getElementById('a').value);
+      var b = parseInt(document.getElementById('b').value);
+      var dau = document.getElementById('dau').value;
+      var kq = document.getElementById('ketqua');
+      
+      if (dau === "+") {
+        var tong = a + b;
+        kq.innerText = tong.toString();
+      } else if (dau === "-") {
+        var tong = a - b;
+        kq.innerText = tong.toString();
+      } else if (dau === "*") {
+        var tong = a * b;
+        kq.innerText = tong.toString();
+      } else if (dau === "/") {
+        if (b === 0) {
+          kq.innerText = "Error: Cannot divide by zero";
+        } else {
+          var tong = a / b;
+          kq.innerText = tong.toString();
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <label for="a" style="float: left;">a</label>
+  <input type="text" id="a">
+  
+  <label for="dau" style="float: left;">Operator (+, -, *, /)</label>
+  <input type="text" id="dau">
+  
+  <label for="b" style="float: left;">b</label>
+  <input type="text" id="b">
+  
+  <button onclick="TinhTong();">Calculate</button>
+  
+  <label for="ketqua" id="ketqua">Result</label>
+</body>
+</html>
